@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWanderlust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+ 
+  <div class="container-fuild fixed-bottom" id="stickNote">
+    <div class="row center">
+      <div class="col-sm-2">
+        <button class="btn btn-block btn-outline-light">Send Query</button>
+      </div>
+      <div class="col-sm-1">
+        <button class="btn btn-block btn-primary">Book Now</button>
+      </div>
+    </div>
+      </div>
+
+    <div class="contaimer-fiuld my-4 mx-2">
+        <img src="./images/mywanderlustLogo.PNG" width="200rem" height="40rem">
+        <div class="nav-link mx-auto" id="main" width="100%">
+            <ul >
+                <a href="#main" aria-selected="true" onclick="mwlScrollIntoView('#main')"><li>Overview</li></a>
+                <a href="#package"><li>Cost</li></a>
+                <a href="#itinerary" onclick="mwlScrollIntoView('#itinerary')"><li>Itinerary</li></a>
+                <a href="#FAQ"><li>FAQ</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" >
+              <div class="carousel-item active" >
+                <img height="500rem" src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/139/LRM_EXPORT_47488826497445_20191112_181848280_t.jpeg" class="d-block w-100" alt="..." >
+              </div>
+              <div class="carousel-item">
+                <img height="500rem" src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/139/LRM_EXPORT_47488826497445_20191112_181848280_t.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img height="500rem" src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/139/LRM_EXPORT_47488826497445_20191112_181848280_t.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <br>
+        <div class="main">
+            <div class="row">
+                <div class="col-sm-8"> 
+                    <a href="#">Packages / Trekking</a> 
+                    <h3 class="display-3 fw-bold text-shadow mb-4"><strong>NAG TIBBA TREK</strong></h3>
+                    <p class="text-muted" style="font-weight:lighter">A weekend trek through thick forests, meadows and snow</p>
+                </div>
+                <div class="col-sm-3">
+                    <p class="text-muted " style="font-weight:lighter; display: flex;justify-content: center; align-content: center;">Quick facts about Nag Tibba package</p>
+               
+                    <div class="row">
+                        <div class="col" >
+                            <div class="item text-muted">Duration</div>
+                            <div class="item text-muted">Duration</div>
+                        </div>
+                        <div class="col">
+                            <div class="item text-muted">Duration</div>
+                            <div class="item text-muted">Duration</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col boxes" >
+                    <h4 class="text-center" style="border-bottom: 2px solid;padding-bottom: 1rem;">Join a Group</h4><br>
+                    <p>This package is available everyday! You will be able to choose your dates when you book.</p>
+                </div>
+                <div class="col boxes">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation" style="border-bottom: 2px solid;width: 8rem;padding-bottom: 1rem;">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inclusion</button>
+                        </li>
+                        <li class="nav-item" role="presentation" style="border-bottom: 2px solid;width: 8rem;padding-bottom: 1rem;">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Exclusion</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <ul style="display: flex; flex-direction:column">
+                                <p><li class="box-li">Tents on sharing basis and other camping equipment.</li>
+                                  <li class="box-li">All veg meals starting from day 1 lunch to day 2 lunch.</li>
+                                  <li class="box-li">Certified Trek leader, guides and forest entry charges.</li></p>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <ul style="display: flex; flex-direction:column ;">
+                                <li class="box-li">Tents on sharing basis and other camping equipment.</li>
+                                <li class="box-li">All veg meals starting from day 1 lunch to day 2 lunch.</li>
+                            </ul>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="col boxes"  id="itinerary">
+                    <h4 class="text-center" style="border-bottom: 2px solid;padding-bottom: 1rem;">Itinerary</h4><br>
+                    <p>This package is available everyday! You will be able to choose your dates when you book.</p>
+                </div>
+            </div>
+        </div>
+</div>
+        <div class="container-fuild" id="package">
+          <div class="packages">
+            <h4 class="text-center" style="border-bottom: 2px solid;padding-bottom: 1rem; color: #dc3545;">Pick Your Packages</h4>
+          </div>
+          <div class="row center">
+            <div class="col-sm-4 boxes package-box" >
+              <div class="heading"><h4>Dehradun to Dehradun</h4></div>
+              <div class="content"><h2>Rs 2999 </h2><br> <span class="secondary-text">per person</span></div>
+              <div class="button"><button class="btn btn-block btn-primary">Book Now </button></div>
+            </div>
+            <div class="col-sm-4 boxes package-box">
+              <div class="heading"><h4>Delhi to Delhi</h4></div>
+              <div class="content"><h2>Rs 4299</h2> <br> <span class="secondary-text">per person</span></div>
+              <div class="button"><button class="btn btn-block btn-primary">Book Now</button></div>
+            </div>
+          </div>
+        </div>
+       </div>
+        <div class="container-fuild">
+          <div class="packages">
+            <h4 class="text-center" style=" color: #dc3545;">Available Coupons</h4>
+            <span class="text-muted center" style="font-size: smaller; border-bottom: 2px solid;padding-bottom: 1rem;border-color:#dc3545 ; ">(Will apply automatically during booking)</span>
+          </div>
+          <div class="row center">
+            <div class="col-sm-4 coupon-box" >
+                <div class="row" style="display: flex; justify-content: space-between;">
+                  <div class="col-sm-2" style="transform: rotate(270deg);border-bottom: 2px solid gray;">
+                    <h5>OCT OFF</h5>
+                  </div>
+                  <div class="col-sm-10">
+                      <h5>No Convenience Fees</h5>
+                      <span class="text-muted " style="font-size: smaller; display: flex; flex-direction: row; ">No Conveninece fees for booking done in october.</span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-4 coupon-box" >
+              <div class="row" style="display: flex; justify-content: space-between;">
+                <div class="col-sm-3" style="transform: rotate(270deg); border-bottom: 2px solid gray;">
+                  <h5>FRIENDS</h5>
+                </div>
+                <div class="col-sm-9">
+                    <h5>Additional 10% Off</h5>
+                    <span class="text-muted " style="font-size: smaller; display: flex; flex-direction: row; ">10% discount on groups of 2 or more.</span>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+    </div>
+        <div class="container-fuild" id="FAQ">
+          <div class="packages">
+            <h4 class="text-center" style="border-bottom: 2px solid;padding-bottom: 1rem; color: #dc3545;">Have More Questions?</h4>
+          </div>
+          <div class="row center">
+            <div class="col-md-6 ques-box " >
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     Want to go on some other date other than listed here?
+                    </button>
+                  </h2>
+                  
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What's the cancellation policy
+                    </button>
+                  </h2>
+                  
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Wnat to ask something else?
+                    </button>
+                  </h2>
+                  
+                </div>
+              </div>
+                
+            </div>
+            <div class="col-md-6 ques-box " >
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Please suggest some dates that you have in mind.<br>
+                  <form class="form-group" style="margin-top: 1rem;">
+                    <div>
+                      <input class="form-control" type="text" placeholder="Your Name*" required>
+                    </div><br>
+                    <div class="row ">
+                      <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder="Your Email*" required>
+                      </div>
+                      <div class="col-md-6">
+                      <input class="form-control" type="text" placeholder="Your Phone*" required>
+                      </div>
+                    </div><br>
+                    <div class="row ">
+                      <div class="col-md-6">
+                        <input class="form-control" type="number" placeholder="No of People*" required>
+                      </div>
+                      <div class="col-md-6">
+                      <input class="form-control" type="text" placeholder="Tentative Date*" required>
+                      </div>
+                    </div><br>
+                    <div>
+                      <textarea class="form-control" rows=4 cols='40' type="text" placeholder="Add a Message*" required></textarea>
+                    </div><br>
+                    <div>
+                      <button class="btn btn-block btn-primary" >Send Message</button>
+                    </div><br>
+                  </form>
+                </div>
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    We totally understand that unforeseen circumstances might need you to change plans, and so our cancellation policy makes it easier to do that.
+                    
+                        Cancellations prior to 30 days from the start of the trip — full refund.
+                        Cancellation between 30 days and 15 days to the start of the trip — 50% refund.
+                        Cancellation less than 15 days to the start of the trip — no refund.
+                    
+                    In case of unforeseen weather conditions, government restrictions or any other unavoidable circumstances beyond the control of the host, certain activities during the expedition or the event itself may be cancelled, or there could be change in the itinerary. In such cases, the host will try their best to provide an alternate feasible activity or a voucher will be handed over (in case of cancellation or rescheduling of event) to you. However no refund will be provided for the same.
+                    
+                    In case the trip is cancelled by the host for lack of minimum number of people in the batch, you will get a full refund.
+                    
+                </div>
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h5>Ask the Host</h5> <form class="form-group" style="margin-top: 1rem;">
+                    <div>
+                      <input class="form-control" type="text" placeholder="Your Name*" required>
+                    </div><br>
+                    <div class="row ">
+                      <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder="Your Email*" required>
+                      </div>
+                      <div class="col-md-6">
+                      <input class="form-control" type="text" placeholder="Your Phone*" required>
+                      </div>
+                    </div><br>
+                    <div class="row ">
+                      <div class="col-md-6">
+                        <input class="form-control" type="number" placeholder="No of People*" required>
+                      </div>
+                      <div class="col-md-6">
+                      <input class="form-control" type="text" placeholder="Tentative Date*" required>
+                      </div>
+                    </div><br>
+                    <div>
+                      <textarea class="form-control" rows=4 cols='40' type="text" placeholder="Add a Message*" required></textarea>
+                    </div><br>
+                    <div>
+                      <button class="btn btn-block btn-primary" >Send Message</button>
+                    </div><br>
+                  </form>
+                </div>
+              </div>
+              </div>
+          </div>
+          </div>
+        </div><br>
+
+        <div class="container-fuild" style="margin-bottom: 5rem;">
+          <div class="packages">
+            <h4 class="text-center" style="border-bottom: 2px solid;padding-bottom: 1rem; color: #dc3545;">About Us</h4>
+            <img src="./images/mywanderlustLogo.PNG">
+          </div>
+          </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="index.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
